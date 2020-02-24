@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5aa9b89b4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/style.css" type="text/css">
+</head>
+<body>
+   <!-- Static navbar -->
+   <header>
+   <nav class="navbar navbar-expand-lg navbar-light nav-inverse" role="navigation">
+       <!-- Logo -->
+       <span class="navbar-brand" id="offwhiteText" href="#"><i class="fas fa-dove" alt="logo of a bird"></i> Virtual Help</span>
+       <!-- Toggle Navigation -->
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon navbar-inverse"></span>
+           <span class="sr-only">Toggle navigation</span>
+       </button>
+       <!-- navbar content -->
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-hover" id="offwhiteText" href="#">Home <span class="sr-only">Home Page</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="offwhiteText" href="#">About<span class="sr-only">About Page</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto float-right drop-nav" id="offwhiteText">
+                 <!-- Courses dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- Mabye include categories in the dropdown? or have a hover option to show dropdown -->
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle float-right" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle" alt="logo of profile pic" id="offwhiteText"></i></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">My Courses</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Account</a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </li>
+           </ul>
+          
+
+
+       </div>
+       <!-- end navbar content -->
+   </nav>
+   <!-- end static navbar -->
+</header>
+</body>
+</html>

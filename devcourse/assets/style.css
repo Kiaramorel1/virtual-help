@@ -1,0 +1,29 @@
+.drop-nav {
+    margin-right: 0px;
+}
+.nav-inverse {
+    background-color: #003300;
+    
+}
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+#offwhiteText {
+    color: rgb(245, 222, 179);
+}
+#navbarDropdown {
+    color: rgb(245, 222, 179);
+}
+.nav-hover{
+    background-color: #002200;
+    top: 5px;
+    color: rgb(​ 255, ​ 204, ​ 0);
+}
+.nav-hover:hover {
+  background-color: #002200;
+  color: #FFCC00;
+  height: 100%;
+}
