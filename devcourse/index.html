@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5aa9b89b4c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
    <!-- Static navbar -->
    <header>
    <nav class="navbar navbar-expand-lg navbar-light nav-inverse" role="navigation">
        <!-- Logo -->
-       <span class="navbar-brand" id="offwhiteText" href="#"><i class="fas fa-dove" alt="logo of a bird"></i> Virtual Help</span>
+       <span class="navbar-brand text-white" href="#"><img src="assets/LogoMakr_5mOclx.png" alt="logo of a bird" id="logosizing"></img> Virtual Help</span>
        <!-- Toggle Navigation -->
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon navbar-inverse"></span>
@@ -21,24 +22,26 @@
        </button>
        <!-- navbar content -->
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav mr-auto">
+           <ul class="navbar-nav mr-auto left-nav">
                 <li class="nav-item active">
-                    <a class="nav-link nav-hover" id="offwhiteText" href="#">Home <span class="sr-only">Home Page</span></a>
+                    <a class="nav-link text-white" href="#">Home <span class="sr-only">Home Page</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="offwhiteText" href="#">About<span class="sr-only">About Page</span></a>
+                    <a class="nav-link text-white" href="#">About<span class="sr-only">About Page</span></a>
                 </li>
             </ul>
-            <ul class="navbar-nav mr-auto float-right drop-nav" id="offwhiteText">
+            <!-- right side of nav bar -->
+            <ul class="navbar-nav ml-auto left-nav drop-nav text-white">
                  <!-- Courses dropdown -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <!-- Mabye include categories in the dropdown? or have a hover option to show dropdown -->
                     </div>
                 </li>
+                <!-- profile dropdown -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle float-right" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle" alt="logo of profile pic" id="offwhiteText"></i></a>
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle" alt="logo of profile pic"></i></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">My Courses</a>
                         <a class="dropdown-item" href="#">Profile</a>
@@ -48,13 +51,58 @@
                     </div>
                 </li>
            </ul>
-          
-
-
        </div>
        <!-- end navbar content -->
    </nav>
    <!-- end static navbar -->
 </header>
+<!-- Sidebar -->
+<div class="bg-light" id="sidebar-wrapper">
+    <h3 class="sidebar-heading" id="course-name">Course Name</h3>
+</div>
+<div class="col-md-2">
+    <div id="sidebar-collapse">
+        <button class="btn btn-secondary float-left" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</div>
+<nav id="sidebar">
+    <div class="list-group list-group-flush border-left border-right border-top">
+    <button class="dropdown-btn list-group-item list-group-item-action bg-light dropdown-toggle" id="1submenu">Module 1</button>
+    <div class="dropdown-container1">
+        <a href="#" class="dropdown-item">Link 1</a>
+        <a href="#" class="dropdown-item">Link 2</a>
+        <a href="#" class="dropdown-item">Link 3</a>
+    </div>
+    <button class="dropdown-btn list-group-item list-group-item-action bg-light dropdown-toggle" id="2submenu">Module 2</button>
+    <div class="dropdown-container2">
+        <a href="#" class="dropdown-item">Link 1</a>
+        <a href="#" class="dropdown-item">Link 2</a>
+        <a href="#" class="dropdown-item">Link 3</a>
+    </div>
+    <button class="dropdown-btn list-group-item list-group-item-action bg-light dropdown-toggle" id="3submenu">Module 3</button>
+    <div class="dropdown-container3">
+        <a href="#" class="dropdown-item">Link 1</a>
+        <a href="#" class="dropdown-item">Link 2</a>
+        <a href="#" class="dropdown-item">Link 3</a>
+    </div>
+    <button class="dropdown-btn list-group-item list-group-item-action bg-light dropdown-toggle" id="4submenu">Module 4</button>
+    <div class="dropdown-container4">
+        <a href="#" class="dropdown-item">Link 1</a>
+        <a href="#" class="dropdown-item">Link 2</a>
+        <a href="#" class="dropdown-item">Link 3</a>
+</nav>
+    <!-- Page Content -->
+
+<!-- /#sidebar-wrapper -->
+
+<!-- Bootstrap Jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- jquery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/script.js"></script>
 </body>
 </html>

@@ -1,8 +1,5 @@
-.drop-nav {
-    margin-right: 0px;
-}
 .nav-inverse {
-    background-color: #003300;
+    background-color: rgb(11,40,112);
     
 }
 .navbar {
@@ -11,19 +8,19 @@
     letter-spacing: 2px;
     font-size: 1.2rem;
 }
-#offwhiteText {
-    color: rgb(245, 222, 179);
+.nav-link:hover {
+  background-color: #1b0752;
+  color: rgb(255, 136, 0);
 }
-#navbarDropdown {
-    color: rgb(245, 222, 179);
+#logosizing {
+    height: 33px;
 }
-.nav-hover{
-    background-color: #002200;
-    top: 5px;
-    color: rgb(​ 255, ​ 204, ​ 0);
+#sidebar.active {
+    margin-left: -250px;
 }
-.nav-hover:hover {
-  background-color: #002200;
-  color: #FFCC00;
-  height: 100%;
+#sidebar {
+    width: 180px
+}
+#sidebar-collapse {
+    margin-left: -12px;
 }
