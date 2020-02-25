@@ -4,3 +4,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.langBtn{
+    background-color: rgba(255, 108, 23, 0.945);
+
+}
+.colorBtn{
+background-color: rgba(255, 108, 23, 0.945);
+ margin-left: 90px;
+ position: absolute;
+ top: 350px;       
+        
+}
