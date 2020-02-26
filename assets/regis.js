@@ -55,7 +55,7 @@ function studentSignIn() {
         var photo = user.photoURL
         console.log("You are now logged in")
         localStorage.user = result.user;
-        window.location.href = "/createprofile/studentprofile.html"
+        window.location.href = "./createprofile/studentprofile.html"
         
         // populateProfile(email, displayName, photo )
     }).catch(function(err) {
@@ -87,7 +87,4 @@ auth.onAuthStateChanged(function(firebaseUser) {
     }
 })
 
-if (localStorage.user){
-    console.log(localStorage.user);
-}
 
