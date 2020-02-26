@@ -26,13 +26,13 @@
 }
 #sidebar-collapse {
     margin-left: -5px;
+    margin-top: 10px;
 }
 .wrapper {
     display: flex;
     align-items: stretch;
 }
 #course-name {
-    margin-left: 100px;
     margin-top: 10px;
 }
 .overview-video {
