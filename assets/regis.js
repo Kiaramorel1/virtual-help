@@ -55,8 +55,7 @@ function studentSignIn() {
         var photo = user.photoURL
         console.log("You are now logged in")
         localStorage.user = result.user;
-        window.location.href = "/createprofile/studentprofile.html"
-        
+        window.location.href = "./createprofile/studentprofile.html"
         // populateProfile(email, displayName, photo )
     }).catch(function(err) {
         console.log(err)
@@ -87,7 +86,34 @@ auth.onAuthStateChanged(function(firebaseUser) {
     }
 })
 
+
 if (localStorage.user){
     console.log(localStorage.user);
 }
+
+
+// Sidebar Toggle
+$(document).ready(function () {
+    // Toggle Sidebar
+    $('#menu-toggle').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+    // dropdown in Sidebar
+    $('#1submenu').on('click', function () {
+        $('.dropdown-container1').toggle();
+    })
+    $('#2submenu').on('click', function () {
+        $('.dropdown-container2').toggle();
+    })
+    $('#3submenu').on('click', function () {
+        $('.dropdown-container3').toggle();
+    })
+    $('#4submenu').on('click', function () {
+        $('.dropdown-container4').toggle();
+    })
+
+});
+
+
+
 
