@@ -14,6 +14,10 @@
 #logosizing {
     height: 33px;
 }
+
+#logosizing-4 {
+    height: 150px;
+}
 #sidebar.active {
     margin-left: -250px;
 }
