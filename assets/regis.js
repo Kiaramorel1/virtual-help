@@ -19,6 +19,7 @@ var signOut = $('#logout')
 var teachSignIn = $('#google-sign-in-teacher')
 var studSignIn = $('#google-sign-in-student')
 
+
 // Teacher Sign In Function
 function teacherSignIn() {
     base_provider = new firebase.auth.GoogleAuthProvider()
@@ -53,7 +54,9 @@ function studentSignIn() {
         console.log(email)
         var photo = user.photoURL
         console.log("You are now logged in")
-        window.location.href = "../profilepages/profilepage.html"
+        localStorage.user = result.user;
+        window.location.href = "/createprofile/studentprofile.html"
+        
         // populateProfile(email, displayName, photo )
     }).catch(function(err) {
         console.log(err)
@@ -84,5 +87,7 @@ auth.onAuthStateChanged(function(firebaseUser) {
     }
 })
 
-
+if (localStorage.user){
+    console.log(localStorage.user);
+}
 
