@@ -1,6 +1,6 @@
 var config = {
     apiKey: "AIzaSyAW6hMIb20NrEQQYFFhvZIuPWQVDEbG0jU",
-    uthDomain: "virtual-help-b832e.firebaseapp.com",
+    authDomain: "virtual-help-b832e.firebaseapp.com",
     databaseURL: "https://virtual-help-b832e.firebaseio.com",
     projectId: "virtual-help-b832e",
     storageBucket: "virtual-help-b832e.appspot.com",
