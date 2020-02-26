@@ -11,8 +11,7 @@
 </head>
 <body>
    <!-- Static navbar -->
-   <header>
-   <nav class="navbar navbar-expand-lg navbar-light nav-inverse" role="navigation">
+   <nav class="navbar navbar-expand-lg navbar-light nav-inverse">
        <!-- Logo -->
        <span class="navbar-brand text-white" href="#"><img src="assets/LogoMakr_5mOclx.png" alt="logo of a bird" id="logosizing"></img> Virtual Help</span>
        <!-- Toggle Navigation -->
@@ -24,7 +23,7 @@
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <ul class="navbar-nav mr-auto left-nav">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Home <span class="sr-only">Home Page</span></a>
+                    <a class="nav-link text-white" href="../index.html">Home <span class="sr-only">Home Page</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">About<span class="sr-only">About Page</span></a>
@@ -33,21 +32,23 @@
             <!-- right side of nav bar -->
             <ul class="navbar-nav ml-auto left-nav drop-nav text-white">
                  <!-- Courses dropdown -->
-                <li class="nav-item dropdown">
+                <li class="nav-item dropleft">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <!-- Mabye include categories in the dropdown? or have a hover option to show dropdown -->
+                        <a class="dropdown-item" href="../student-course-page/index.html">Web Development 101</a>
+                        <a class="dropdown-item" href="#">Game Development Crash Course</a>
+                        <a class="dropdown-item" href="#">Blockchain Fundementals</a>
                     </div>
                 </li>
                 <!-- profile dropdown -->
-                <li class="nav-item dropdown">
+                <li class="nav-item dropleft">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle" alt="logo of profile pic"></i></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">My Courses</a>
-                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="../student-course-page/allcourses.html">My Courses</a>
+                        <a class="dropdown-item" href="../profilepages/profilepage.html">Profile</a>
                         <a class="dropdown-item" href="#">Settings</a>
                         <a class="dropdown-item" href="#">Account</a>
-                        <a class="dropdown-item" id="logout" href="#">Log Out</a>
+                        <a class="dropdown-item" href="../index.html">Log Out</a>
                     </div>
                 </li>
            </ul>
@@ -55,7 +56,6 @@
        <!-- end navbar content -->
    </nav>
    <!-- end static navbar -->
-</header>
 <!-- Button -->
 <div id="sidebar-collapse">
     <button class="btn btn-secondary float-left" id="menu-toggle">
@@ -94,8 +94,8 @@
         <!-- Course Name -->
         <h3 class="sidebar-heading" id="course-name">Web Development 101</h3>
         <video class="overview-video" controls>
-            <source src="movie.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
+            <!-- <source src="" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg"> -->
         Your browser does not support the video tag.
         </video>
         <br>
@@ -109,9 +109,13 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- adding core for firebase  -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+<!-- CDNs added for database and Authentication -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
 <!-- jquery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="./assets/course.js"></script>
-<script src="../assets/regis.js"></script>
 </body>
 </html>
