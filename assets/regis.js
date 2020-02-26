@@ -53,6 +53,8 @@ function studentSignIn() {
         console.log(email)
         var photo = user.photoURL
         console.log("You are now logged in")
+        window.location.href = "../profilepages/profilepage.html"
+        // populateProfile(email, displayName, photo )
     }).catch(function(err) {
         console.log(err)
         console.log("sorry try again")
