@@ -1,25 +1,86 @@
-$("#regis".click(function(event) {
-    $(".form-group").ready (function({
-        $()
+var config = {
+    apiKey: "AIzaSyAW6hMIb20NrEQQYFFhvZIuPWQVDEbG0jU",
+    uthDomain: "virtual-help-b832e.firebaseapp.com",
+    databaseURL: "https://virtual-help-b832e.firebaseio.com",
+    projectId: "virtual-help-b832e",
+    storageBucket: "virtual-help-b832e.appspot.com",
+    messagingSenderId: "981848357630",
+    appId: "1:981848357630:web:52fd690620c2131ba983af",
+    measurementId: "G-QY5YDL3MDM"
+  };
+
+firebase.initializeApp(config);
+// Google provider object
+var provider = new firebase.auth.GoogleAuthProvider();
+
+// Variables
+var auth = firebase.auth();
+var signOut = $('#logout')
+var teachSignIn = $('#google-sign-in-teacher')
+var studSignIn = $('#google-sign-in-student')
+
+// Teacher Sign In Function
+function teacherSignIn() {
+    base_provider = new firebase.auth.GoogleAuthProvider()
+
+    auth.signInWithPopup(base_provider).then(function(result) {
+        var token = result.credential.accessToken;
+        console.log(token);
+        var user = result.user
+        console.log(user)
+        var uid = user.uid
+        var displayName = user.displayName
+        var email = user.email
+        console.log(email)
+        var photo = user.photoURL
+        console.log("You are now logged in")
+    }).catch(function(err) {
+        console.log(err)
+        console.log("sorry try again")
     })
+}
 
 
-    $(document).ready(function(){
-        $("#regis").click(function(){
-          $("#regis").hide();
-        });
+// Student Sign In Function
+function studentSignIn() {
+    base_provider = new firebase.auth.GoogleAuthProvider()
+
+    auth.signInWithPopup(base_provider).then(function(result) {
+        var user = result.user
+        console.log(user)
+        var displayName = user.displayName
+        var email = user.email
+        console.log(email)
+        var photo = user.photoURL
+        console.log("You are now logged in")
+    }).catch(function(err) {
+        console.log(err)
+        console.log("sorry try again")
     })
+}
 
-    // <!-- <div class="form-group">
-    //                    <label for="exampleInputEmail1">Email address</label>
-    //                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    //                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    //                   </div>
-    //                   <div class="form-group">
-    //                     <label for="exampleInputPassword1">Password</label>
-    //                     <input type="password" class="form-control" id="exampleInputPassword1">
-    //                   </div>
-    //                   <div class="form-group form-check">
-    //                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    //                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    //                   </div> --></div>
+// On click sign out
+signOut.on('click', function(e) {
+    e.preventDefault();
+    auth.signout();
+})
+
+// Auth State Changed
+auth.onAuthStateChanged(function(firebaseUser) {
+    if (firebaseUser) {
+        console.log(firebaseUser);
+        signOut.show();
+    } else {
+        console.log("not logged in");
+        signOut.hide()
+    }
+})
+
+// Login on click
+teachSignIn.on('click', function() {
+    teacherSignIn();
+})
+studSignIn.on('click', function() {
+    studentSignIn();
+})
+
