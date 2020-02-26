@@ -87,10 +87,6 @@ auth.onAuthStateChanged(function(firebaseUser) {
 })
 
 
-if (localStorage.user){
-    console.log(localStorage.user);
-}
-
 
 // Sidebar Toggle
 $(document).ready(function () {
