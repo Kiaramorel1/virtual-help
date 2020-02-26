@@ -59,7 +59,7 @@ function studentSignIn() {
         localStorage.photo = photo
 
 
-        window.location.href = "./createprofile/studentprofile.html"
+        window.location.href = "./profilepages/profilepage.html"
         // populateProfile(email, displayName, photo )
     }).catch(function(err) {
         console.log(err)
