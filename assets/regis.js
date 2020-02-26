@@ -64,7 +64,13 @@ signOut.on('click', function(e) {
     e.preventDefault();
     auth.signout();
 })
-
+// Login on click
+teachSignIn.on('click', function() {
+    teacherSignIn();
+})
+studSignIn.on('click', function() {
+    studentSignIn();
+})
 // Auth State Changed
 auth.onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser) {
@@ -76,11 +82,5 @@ auth.onAuthStateChanged(function(firebaseUser) {
     }
 })
 
-// Login on click
-teachSignIn.on('click', function() {
-    teacherSignIn();
-})
-studSignIn.on('click', function() {
-    studentSignIn();
-})
+
 
