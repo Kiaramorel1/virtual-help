@@ -54,8 +54,11 @@ function studentSignIn() {
         console.log(email)
         var photo = user.photoURL
         console.log("You are now logged in")
-        localStorage.user = result.user;
-        JSON.stringify(result.user)
+        localStorage.name = displayName
+        localStorage.email = email
+        localStorage.photo = photo
+
+
         window.location.href = "./createprofile/studentprofile.html"
         // populateProfile(email, displayName, photo )
     }).catch(function(err) {
