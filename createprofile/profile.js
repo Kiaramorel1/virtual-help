@@ -97,7 +97,7 @@ console.log(localStorage.user);
 
 if (localStorage.user){
     console.log(localStorage.user);
-}
+};
 
 // $('#email-input).val(localStorage.email)
 // $('#userimage).attr("src", localStorage.photo)
