@@ -4,182 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title> 
+    <title>FAQ</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/5aa9b89b4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../About/assets/style.css"></link>
+    <link rel="stylesheet" href="../student-course-page/assets/style.css"></link>
+</head>
+<body>
+  <!-- Static navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light nav-inverse" role="navigation">
+        <!-- Logo -->
+        <span class="navbar-brand text-white" href="#"><img src="../student-course-page/assets/LogoMakr_5mOclx.png" alt="logo of a bird" id="logosizing"></img> Virtual Help</span>
+        <!-- Toggle Navigation -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-inverse"></span>
+            <span class="sr-only">Toggle navigation</span>
+        </button>
+        <!-- navbar content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto left-nav">
+                 <li class="nav-item active">
+                     <a class="nav-link text-white" href="../index.html">Home <span class="sr-only">Home Page</span></a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link text-white" href="../About/About-Us.html">About<span class="sr-only">About Page</span></a>
+                 </li>
+             </ul>
+             <!-- right side of nav bar -->
+             <ul class="navbar-nav ml-auto left-nav drop-nav text-white">
+                  <!-- Courses dropdown -->
+                 <li class="nav-item dropleft">
+                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <a class="dropdown-item" href="../student-course-page/index.html">Web Development 101</a>
+                       <a class="dropdown-item" href="#">Game Development Crash Course</a>
+                       <a class="dropdown-item" href="#">Blockchain Fundementals</a>
+                     </div>
+                 </li>
+                 <!-- profile dropdown -->
+                 <li class="nav-item dropleft">
+                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle" alt="logo of profile pic"></i></a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="../student-course-page/allcourses.html">My Courses</a>
+                         <a class="dropdown-item" href="../profilepages/profilepage.html">Profile</a>
+                         <a class="dropdown-item" href="#">Settings</a>
+                         <a class="dropdown-item" href="#">Account</a>
+                         <a class="dropdown-item" href="#">Log Out</a>
+                     </div>
+                 </li>
+            </ul>
+        </div>
+        <!-- end navbar content -->
+    </nav>
+    <!-- end static navbar -->
+</header>
 
-    <div class="row">
-    <div class="row">
-    <div class="row">    <div class="row">
-    <div class="row">
-    <div class="row"><div class="row">
-<div class="row">
-<body> 
-    <!-- <h1><b> 
-        Frequently Asked Questions
-    </b></h1> 
-    <h2> 
-        How do I create a new account?
-    </h2> 
-    <p> 
-        To create a new account go to the home page and click either 
-        student or teacher to sign up with your email, username, and password.
-    </p> 
-     
-    <h3>
-        Where is the verification email for my new account?
-    </h3> 
-    <p> 
-        It should be in your inbox or spam folder, if it is not in your inbox or 
-        your spam folder, you request a new login email on the login page.  
-    </p> 
-    <h4> 
-        What if I forgot my password? 
-    </h4> 
-    <p> 
-        If you forgot your password you can recover your account and 
-        create a new password by clicking the "forgot password" option 
-        that will intially pop up on the login page that you are originally 
-        directed to when you begin to log in with your email address. 
-    </p> -->
+<h1 class="faqTitle text-center mb-5 mt-4 font-weight-bold">Frequently Asked Questions (FAQ)</h1>
 
-<section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
-  <div class="container">
-  
-	  <div></div><h2>          Frequently Asked Questions </h2>
-	  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-		<div class="panel panel-default">
-		  <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
-			<h3 class="panel-title">
-			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
-				How do I create a new account?
-			  </a>
-			</h3>
-		  </div>
-		  <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
-			<div class="panel-body px-3 mb-4">
-			  <p>To create a new account go to the home page and click either student or teacher to sign up with your email, username, and password.</p>
-			</div>
-		  </div>
-		</div>
-		
-		<div class="panel panel-default">
-		  <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
-			<h3 class="panel-title">
-			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-				Where is the verification email for my new account?
-			  </a>
-			</h3>
-		  </div>
-		  <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
-			<div class="panel-body px-3 mb-4">
-			  <p>It should be in your inbox or spam folder, if it is not in your inbox or your spam folder, you request a new login email on the login page.</p>
-			</div>
-		  </div>
-		</div>
-		
-		<div class="panel panel-default">
-		  <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
-			<h3 class="panel-title">
-			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                What if I forgot my password?
-			  </a>
-			</h3>
-		  </div>
-		  <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-			<div class="panel-body px-3 mb-4">
-			  <p>If you forgot your password you can recover your account and 
-                create a new password by clicking the "forgot password" option 
-                that will intially pop up on the login page that you are originally 
-                directed to when you begin to log in with your email address. 
-                </p>
-			</div>
-		  </div>
-		</div>
-		
-		<!-- <div class="panel panel-default">
-		  <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
-			<h3 class="panel-title">
-			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
-				
-			  </a>
-			</h3>
-		  </div>
-		  <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-			<div class="panel-body px-3 mb-4">
-			  <p></p>
-			</div>
-		  </div>
-		</div>
-      </div> -->  
-       
-          <!-- Footer -->
-<footer class="page-footer font-small indigo">
-
-    <!-- Footer Links -->
-    <div class="container">
-  
-      <!-- Grid row-->
-      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="../About/About-Us.html">About us</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="FAQ.html">FAQ</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Contact</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
+<!-- FAQ Accordian -->
+<div class="bs-example">
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i> How do I create a new account?</button>									
+        </h2>
       </div>
-      
-      <!-- Grid row-->
-      <hr class="rgba-white-light">
-  
-      <!-- Grid row-->
-      <div class="row d-flex text-center justify-content-center">
-  
-        <!-- Grid column -->
-        <div class="col-md-8 col-12 color-text">
-          <p>Cookies Disclaimer</p>
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>To create a new account go to the home page and click either student or teacher to sign up with your email, username, and password.</p>
         </div>
-        <!-- Grid column -->
-  
       </div>
-  
-        </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row-->
-  
     </div>
-    <!-- Footer Links -->
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 color-text">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i> Where is the verification email for my new account?</button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>It should be in your inbox or spam folder, if it is not in your inbox or your spam folder, you request a new login email on the login page.</p>
+        </div>
+      </div>
     </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
-  
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i> What if I forgot my password?</button>                     
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>If you forgot your password you can recover your account and create a new password by clicking the "forgot password" option that will intially pop up on the login page that you are originally directed to when you begin to log in with your email address.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i> What if my question is not listed?</button>                     
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>If your question is not listed please contact us <a href="#">here</a>.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+</div>
 
+<!-- Footer -->
+<footer class="page-footer footer font-small indigo mb-0">
+  <!-- Footer Links -->
+  <div class="container">
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="../About/About-Us.html">About us</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="FAQ.html">FAQ</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="../contact/contact.html">Contact</a>
+        </h6>
+      </div>
+        <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+    <hr class="rgba-white-light">
+    <!-- Grid row-->
+    <div class="row d-flex text-center justify-content-center">
+      <!-- Grid column -->
+      <div class="mr-2 mb-3">
+        <p><a class="text-white" href="../privacy/policy.html">Privacy Policy</a></p>
+      </div>
+      <div class="mr-2 mb-3">
+        <p><a class="text-white" href="../Terms/terms.html">Terms and Conditions</a></p>
+      </div>
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 color-text">© 2020 Copyright: Rights Reserved</div>
+    <!-- Copyright -->
+</footer>
+<!-- /Footer -->
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../student-course-page/assets/course.js"></script>
 </body>
 </html>
