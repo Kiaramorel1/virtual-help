@@ -51,7 +51,7 @@ var config = {
       dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
 
-    window.location.href = "/assessment/assessment.html"
+    window.location.href = "//assessment/assessment.html"
 
   });
 
