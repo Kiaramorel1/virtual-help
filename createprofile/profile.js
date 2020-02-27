@@ -51,7 +51,7 @@ var config = {
       dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
 
-    window.location.href = "./assessment/assessment.html"
+    window.location.href = "/assessment/assessment.html"
 
   });
 
@@ -93,5 +93,5 @@ if (localStorage.user){
 }
 
 $("#username").text(localStorage.name);
-$("#useremail").text(localStorage.name);
+$("#useremail").text(localStorage.email);
 
