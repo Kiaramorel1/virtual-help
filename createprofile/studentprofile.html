@@ -9,45 +9,45 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-        <div class="jumbotron profilepage bg-info text-dark">
-        <h1 class="display-4 text-center">Create Your Profile</h1>
-        </div>
-        <div class="container">
-        <h2>Welcome Student!</h2>
-         <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Name:</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1">
-            </div>
-            <div class="form-group">
-                    <label for="exampleFormControlInput1">D.O.B:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mm/dd/yyyy">
-                  </div>
-            <div class="form-group">
-                    <label for="exampleFormControlInput1">User Name:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ExampleUser_Name">
-                  </div>
-                  <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address:</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                      </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Biography:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Interests:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                  <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Relevant Skills:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-  
-        </form>
-<button type="Submit" class="btn btn-primary">Submit</button>
-      
+  <div class="jumbotron profilepage bg-info text-dark">
+    <h1 class="display-4 text-center">Create Your Profile</h1>
   </div>
+  <div class="container">
+    <h2>Welcome Student!</h2>
+      <form>
+        <div class="form-group">
+          <label for="name-input">Name:</label>
+          <input type="name" class="form-control" id="name-input">
+        </div>
+        <div class="form-group">
+          <label for="name-input">D.O.B:</label>
+          <input type="date" class="form-control" id="dob-input" placeholder="mm/dd/yyyy">
+        </div>
+        <div class="form-group">
+          <label for="username-input">User Name:</label>
+          <input type="name" class="form-control" id="username-input" placeholder="ExampleUser_Name">
+        </div>
+        <div class="form-group">
+          <label for="email-input">Email address:</label>
+          <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="bio-input">Biography:</label>
+          <textarea class="form-control" id="bio-input" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="interests-input">Interests:</label>
+          <textarea class="form-control" id="interests-input" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="skills-input">Relevant Skills:</label>
+          <textarea class="form-control" id="skills-input" rows="3"></textarea>
+        </div>
+      </form>
+    <button type="Submit" class="btn btn-primary" id="submit-profile">Submit</button>
+  </div>
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
   <!-- CDNs added for database and Authentication -->
   <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
