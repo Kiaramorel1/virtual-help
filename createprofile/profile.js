@@ -51,7 +51,7 @@ var config = {
       dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
 
-    window.location.href = "https://kiaramorel1.github.io/virtual-help//assessment/assessment.html"
+    window.location.href = "https://kiaramorel1.github.io/virtual-help/assessment/assessment.html"
 
   });
 
@@ -67,6 +67,13 @@ var config = {
     console.log(childSnapshot.val().Skills);
     console.log(childSnapshot.val().dateAdded);
 
+    $('#skills-display').text(childSnapshot.val().Skills);
+    $('#interests-display').text(childSnapshot.val().Interests);
+    $('#bio-display').text(childSnapshot.val().Bio);
+    $('#username-display').text(childSnapshot.val().UserName);
+    $('#email-display').text(childSnapshot.val().Email);
+    $('#name-display').text(childSnapshot.val().Name);
+    $('#dob-display').text(childSnapshot.val().DOB);
     // $("#employee-list").append("<tr><td class='name-display'> " +
     //   childSnapshot.val().Name +
     //   " </td><td class='role-display'> " + childSnapshot.val().Role +
@@ -91,6 +98,7 @@ console.log(localStorage.user);
 if (localStorage.user){
     console.log(localStorage.user);
 }
+
 
 $("#username").text(localStorage.name);
 $("#useremail").text(localStorage.email);

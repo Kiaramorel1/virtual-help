@@ -57,9 +57,9 @@ function studentSignIn() {
         localStorage.name = displayName
         localStorage.email = email
         localStorage.photo = photo
+        $("#userimage").attr("src" , photo)
 
-
-        window.location.href = "./createprofile/studentprofile.html"
+        window.location.href = "https://kiaramorel1.github.io/virtual-help/createprofile/studentprofile.html"
         // populateProfile(email, displayName, photo )
     }).catch(function(err) {
         console.log(err)
