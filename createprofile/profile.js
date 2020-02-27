@@ -51,7 +51,7 @@ var config = {
       dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
 
-    window.location.href = "https://kiaramorel1.github.io/virtual-help/assessment/assessment.html"
+    window.location.href = "https://kiaramorel1.github.io/virtual-help/assessment/assessment.html";
 
   });
 
@@ -99,8 +99,8 @@ if (localStorage.user){
     console.log(localStorage.user);
 }
 
-$('#email-input).val(localStorage.email)
-$('#userimage).attr("src", localStorage.photo)
-// $("#username").text(localStorage.name);
-$("#email-display").text(localStorage.email);
+// $('#email-input).val(localStorage.email)
+// $('#userimage).attr("src", localStorage.photo)
+// // $("#username").text(localStorage.name);
+// $("#email-display").text(localStorage.email);
 
