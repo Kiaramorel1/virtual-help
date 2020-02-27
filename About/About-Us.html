@@ -1,136 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About</title> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/5aa9b89b4c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../About/assets/style.css"></link>
+  <link rel="stylesheet" href="../student-course-page/assets/style.css"></link>
+
 </head>
 <body> 
-        <!-- <h1> <section class="card card-lg" id="about-about"><h1 class="text-xxxl mb-sm mt-sm text-center">
-            <b>About Us</b>
-        </h1>
-            <div class="text-xs text-justify mx-auto" style="max-width: 74rem;"><p class="m-b-xs"></p>
-                Our mission and purpose is to provide people who are 
-                currently incarcerated, as well as people who 
-                were previously incarcerated, with an education and 
-                trade skills to increase social and economic mobility 
-                during and after prison.
-                </p>
+<!-- Static navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light nav-inverse" role="navigation">
+      <!-- Logo -->
+      <span class="navbar-brand text-white" href="#"><img src="../student-course-page/assets/LogoMakr_5mOclx.png" alt="logo of a bird" id="logosizing"></img> Virtual Help</span>
+      <!-- Toggle Navigation -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon navbar-inverse"></span>
+          <span class="sr-only">Toggle navigation</span>
+      </button>
+      <!-- navbar content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto left-nav">
+               <li class="nav-item active">
+                   <a class="nav-link text-white" href="../index.html">Home <span class="sr-only">Home Page</span></a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link text-white" href="About-Us.html">About<span class="sr-only">About Page</span></a>
+               </li>
+           </ul>
+           <!-- right side of nav bar -->
+           <ul class="navbar-nav ml-auto left-nav drop-nav text-white">
+                <!-- Courses dropdown -->
+               <li class="nav-item dropleft">
+                   <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="../student-course-page/index.html">Web Development 101</a>
+                     <a class="dropdown-item" href="#">Game Development Crash Course</a>
+                     <a class="dropdown-item" href="#">Blockchain Fundementals</a>
+                   </div>
+               </li>
+               <!-- profile dropdown -->
+               <li class="nav-item dropleft">
+                   <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle" alt="logo of profile pic"></i></a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <a class="dropdown-item" href="../student-course-page/allcourses.html">My Courses</a>
+                       <a class="dropdown-item" href="../profilepages/profilepage.html">Profile</a>
+                       <a class="dropdown-item" href="#">Settings</a>
+                       <a class="dropdown-item" href="#">Account</a>
+                       <a class="dropdown-item" href="#">Log Out</a>
+                   </div>
+               </li>
+          </ul>
+      </div>
+      <!-- end navbar content -->
+  </nav>
+  <!-- end static navbar -->
+</header>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="mbr-white col-md-10">
+      <h1 class="mbr-section-title text-center font-weight-bold pb-3 mbr-fonts-style mt-5">About Us</h1>
+    </div>
+  </div>
+  <section class="features1" id="features1-1">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="card p-3 col-12 border-0">
+                <div class="card-box text-center">
+                    <h4 class="card-title py-3 mbr-fonts-style display-5">
+                        Our Mission</h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Virtual help promotes reentry success through continuity of educational opportunityies.
+                    </p>
+                </div>
             </div>
-                <footer> 
-                    <div class="container text-xss">
-                        <div class= "d-flex justify-content-around flex-items-xxs-column flex-items-md-row flex-wrap">
-                          
+            <div class="card p-3 col-12 border-0">
+                <div class="card-box text-center">
+                    <h4 class="card-title py-3 mbr-fonts-style display-5">
+                        About</h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                      We provide people who are currently incarcerated, as well as people who were previously incarcerated, with an education and trade skills to increase social and economic mobility during and after prison.
+                    </p>
+                </div>
+              </div>
+        </div>
+    </div>
+  </section>
+  <div class="row justify-content-md-center">
+    <div class="mbr-white col-md-10">
+      <h3 class="mbr-section-title text-center font-weight-bold pb-3 mbr-fonts-style mt-5">Meet Our Team</h3>
+    </div>
+  </div>
+  <section class="carousel slide testimonials-slider" id="testimonials-slider1-3">
+    <div class="text-center">
+        <div class="carousel slide" data-ride="carousel" role="listbox" id="testimonials-slider1-3-carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="user col-12">
+                  <div class="user_image">
+                    <i class="fas fa-user-circle fa-5x" alt="logo of profile pic"></i>
+                  </div>
+                  <div class="user_text pb-3">
+                      <p class="mbr-fonts-style display-7">
+                        
+                      </p>
+                  </div>
+                  <div class="user_name mbr-bold pb-2 mbr-fonts-style display-7">
+                      Lauren Birts
+                  </div>
+                  <div class="user_desk mbr-light mbr-fonts-style display-7">
+                      DEVELOPER
+                  </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="user col-md-12">
+                        <div class="user_image">
+                          <i class="fas fa-user-circle fa-5x" alt="logo of profile pic"></i>
+                        </div>
+                        <div class="user_text pb-3">
+                            <p class="mbr-fonts-style display-7">
+                              
+                        </div>
+                        <div class="user_name mbr-bold pb-2 mbr-fonts-style display-7">
+                            Kiara Morel
+                        </div>
+                        <div class="user_desk mbr-light mbr-fonts-style display-7">
+                              DEVELOPER
+                        </div>
                     </div>
-         
-         
+                </div>
+                <div class="carousel-item">
+                    <div class="user col-md-12">
+                        <div class="user_image">
+                          <i class="fas fa-user-circle fa-5x" alt="logo of profile pic"></i>
+                        </div>
+                        <div class="user_text pb-3">
+                            <p class="mbr-fonts-style display-7">
+                            
+                            </p>
+                        </div>
+                        <div class="user_name mbr-bold pb-2 mbr-fonts-style display-7">
+                            John Santiago-Santiago
+                        </div>
+                        <div class="user_desk mbr-light mbr-fonts-style display-7">
+                            DEVELOPER
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="user col-md-12">
+                      <div class="user_image">
+                        <i class="fas fa-user-circle fa-5x" alt="logo of profile pic"></i>
+                      </div>
+                      <div class="user_text pb-3">
+                          <p class="mbr-fonts-style display-7">
+                            
+                      </div>
+                      <div class="user_name mbr-bold pb-2 mbr-fonts-style display-7">
+                          Allison Crane
+                      </div>
+                      <div class="user_desk mbr-light mbr-fonts-style display-7">
+                            DEVELOPER
+                      </div>
+                  </div>
+              </div>
+              </div>
 
-                </footer>
-     
-     
-      -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h5 class="card-title">
-                <!-- Mission Title -->
-                </h5>
+            <div class="carousel-controls">
+                <a class="carousel-control-prev" role="button" data-slide="prev" href="#testimonials-slider1-3-carousel">
+                  <span aria-hidden="true" class="mbri-arrow-prev mbr-iconfont"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                
+                <a class="carousel-control-next" role="button" data-slide="next" href="#testimonials-slider1-3-carousel">
+                  <span aria-hidden="true" class="mbri-arrow-next mbr-iconfont"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                 <p class="card-text">
-                <!-- Mission Text -->
-                </p>
-            </div>
-        </div>
-        <div class="aboutDiv">
-        <div class="row">
-            <div class="col-md-12">
-                <h5>About Us</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                    Our mission and purpose is to provide people who are 
-                    currently incarcerated, as well as people who 
-                    were previously incarcerated, with an education and 
-                    trade skills to increase social and economic mobility 
-                    during and after prison.
-                </p>
-            </div>
-        </div>
-        </div>
-    </div> 
-     
-    <!-- Footer -->
-<footer class="page-footer font-small indigo">
-
-    <!-- Footer Links -->
-    <div class="container">
-  
-      <!-- Grid row-->
-      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">About us</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">FAQ</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Contact</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
+    </div>
+  </section>
+</div>
+<!-- Footer -->
+<footer class="page-footer footer font-small indigo mb-0">
+  <!-- Footer Links -->
+  <div class="container">
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="../About/About-Us.html">About us</a>
+        </h6>
       </div>
-      
-      <!-- Grid row-->
-      <hr class="rgba-white-light">
-  
-      <!-- Grid row-->
-      <div class="row d-flex text-center justify-content-center">
-  
-        <!-- Grid column -->
-        <div class="col-md-8 col-12 color-text">
-          <p>Cookies Disclaimer</p>
-        </div>
-        <!-- Grid column -->
-  
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="../FAQ/FAQ.html">FAQ</a>
+        </h6>
       </div>
-  
-        </div>
-        <!-- Grid column -->
-  
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="../contact/contact.html">Contact</a>
+        </h6>
       </div>
-      <!-- Grid row-->
-  
+        <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+    <hr class="rgba-white-light">
+    <!-- Grid row-->
+    <div class="row d-flex text-center justify-content-center">
+      <!-- Grid column -->
+      <div class="mr-2 mb-3">
+        <p><a class="text-white" href="../privacy/policy.html">Privacy Policy</a></p>
+      </div>
+      <div class="mr-2 mb-3">
+        <p><a class="text-white" href="../Terms/terms.html">Terms and Conditions</a></p>
+      </div>
     </div>
     <!-- Footer Links -->
   
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 color-text">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
+    <div class="footer-copyright text-center py-3 color-text">© 2020 Copyright: Rights Reserved</div>
     <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
+</footer>
+<!-- /Footer -->
 </body>
 </html>
