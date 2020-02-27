@@ -7,6 +7,7 @@
     <title>Assessment Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn2.hubspot.net/hubfs/1716276/embeddable_assessments/disc/disc_assessment_v1.3.6.css"/>
+   
 </head>
 <body>
     <div class="container">
@@ -15,11 +16,17 @@
         </div>
         <h5>The Personality Assessment is designed to give you an understanding of your personality and the career areas that you would be best suited for. We consider this quiz to the first step of an honest and thorough approach to finding a suitable course in the career that intrests you based off of your results. The quiz gives you suggestions for what career areas you might like and will most likely excell at. <h5>
     </div>
-    
-
+    <div id="disc_assessment_root" data-api-token=b4bc86fbc8899ba4751b1476e780bae4 data-use-credit></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn2.hubspot.net/hubfs/1716276/embeddable_assessments/disc/disc_assessment_v1.3.6.js">
  </script>
+ <script>
+ window.crystalKnowsDISCResponse = function (response) {
+    console.log('Here is the personality JSON response:', response)
+    window.location.href = "../index.html";
+  }
+// <button class="src-components-Button-__styles__container___3hc2Q">Finish</button>
+</script>
+ </script>
 </body>
-
 </html>
