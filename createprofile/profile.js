@@ -82,7 +82,7 @@ var config = {
     //   " </td></tr>");
 
     // Handle the errors
-  }, function(errorObject) {
+  }).catch(function(errorObject) {
     console.log("Errors handled: " + errorObject.code);
   });
 
