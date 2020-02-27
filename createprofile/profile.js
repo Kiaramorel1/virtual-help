@@ -51,7 +51,7 @@ var config = {
       dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
 
-    window.location.href = "//assessment/assessment.html"
+    window.location.href = https://kiaramorel1.github.io/virtual-help//assessment/assessment.html
 
   });
 
