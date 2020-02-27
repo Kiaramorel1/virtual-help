@@ -19,6 +19,7 @@ background-color: rgba(255, 108, 23, 0.945);
     background-color: royalblue;
 }
 .appTitle {
-    margin-top: 250px;
-    margin left: 70px;
+    position: absolute;
+    top: 250px;
+    margin-left: 70px;
 }
