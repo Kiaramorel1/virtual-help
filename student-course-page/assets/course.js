@@ -1,3 +1,4 @@
+// Sidebar Toggle
 $(document).ready(function () {
     // Toggle Sidebar
     $('#menu-toggle').on('click', function () {
@@ -18,4 +19,3 @@ $(document).ready(function () {
     })
 
 });
-

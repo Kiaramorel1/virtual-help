@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +25,7 @@
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <ul class="navbar-nav mr-auto left-nav">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Home <span class="sr-only">Home Page</span></a>
+                    <a class="nav-link text-white" href="../index.html">Home <span class="sr-only">Home Page</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">About<span class="sr-only">About Page</span></a>
@@ -36,15 +37,17 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <!-- Mabye include categories in the dropdown? or have a hover option to show dropdown -->
+                      <a class="dropdown-item" href="../student-course-page/index.html">Web Development 101</a>
+                      <a class="dropdown-item" href="#">Game Development Crash Course</a>
+                      <a class="dropdown-item" href="#">Blockchain Fundementals</a>
                     </div>
                 </li>
                 <!-- profile dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle" alt="logo of profile pic"></i></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">My Courses</a>
-                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="../student-course-page/allcourses.html">My Courses</a>
+                        <a class="dropdown-item" href="../profilepages/profilepage.html">Profile</a>
                         <a class="dropdown-item" href="#">Settings</a>
                         <a class="dropdown-item" href="#">Account</a>
                         <a class="dropdown-item" href="#">Log Out</a>
@@ -57,48 +60,62 @@
    <!-- end static navbar -->
 </header>
 <!-- Course Name -->
-<div class="bg-light" id="sidebar-wrapper">
-    <h3 class="sidebar-heading" id="course-name">Course Name</h3>
-</div>
-<!-- Button -->
-<div id="sidebar-collapse">
-    <button class="btn btn-secondary float-left" id="menu-toggle">
-        <i class="fas fa-bars"></i>
-    </button>
-</div>
-<!-- Sidebar -->
-<nav id="sidebar">
-    <div class="list-group list-group-flush border-left border-right border-top">
-    <button class="dropdown-btn list-group-item list-group-item-action bg-light dropdown-toggle" id="1submenu">Module 1</button>
-    <div class="dropdown-container1">
-        <a href="#" class="dropdown-item">Link 1</a>
-        <a href="#" class="dropdown-item">Link 2</a>
-        <a href="#" class="dropdown-item">Link 3</a>
+<div class="container text-center mx-auto mt-5">
+    <!-- Content here -->
+    <h1 class="display-2"><span class="navbar-brand text-white" href="#"><img src="assets/LogoMakr_5mOclx.png" alt="logo of a bird" id="logosizing-4"></img> Virtual Help</span></h1>
+    <p class="lead mb-5">
+        Helping individuals get the help they need.
+    </p>
+
+    <p class="lead mt-5">
+          Courses
+    </p>
+
+    <div class="card-deck mb-5">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="height: 50%;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Web Development 101</h5>
+          <p class="card-text">Build complete Web solutions. Master client and server side developement with five hands on projects.</p>
+          <a href="index.html"><button type="button" class="btn btn-primary">Start Course</button></a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.itstarterseries.com/wp-content/uploads/2018/05/how-to-become-a-game-developer.png" class="card-img-top" style="height: 50%;" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Game Development Crash Course</h5>
+          <p class="card-text">Learn how to code by making games from a tiny game engine like phaser to the more robust power house of Unity3D.</p>
+          <a href="#"><button type="button" class="btn btn-primary">Start Course</button></a>
+          <p class="card-text"><small class="text-muted">Last updated 5 hours ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.cryptotapas.com/wp-content/uploads/2019/03/blockchain.png" style="height: 50%;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Blockchain Fundementals</h5>
+          <p class="card-text">Build a blockchain from sratch and understand how to create your own cryptocurrency and what makes them so valuable.</p>
+          <a href="#"><button type="button" class="btn btn-primary">Start Course</button></a>            
+          <p class="card-text"><small class="text-muted">Last updated 4 days ago</small></p>
+        </div>
+      </div>
     </div>
-    <button class="dropdown-btn list-group-item list-group-item-action bg-light dropdown-toggle" id="2submenu">Module 2</button>
-    <div class="dropdown-container2">
-        <a href="#" class="dropdown-item">Link 1</a>
-        <a href="#" class="dropdown-item">Link 2</a>
-        <a href="#" class="dropdown-item">Link 3</a>
-    </div>
-    <button class="dropdown-btn list-group-item list-group-item-action bg-light dropdown-toggle" id="3submenu">Module 3</button>
-    <div class="dropdown-container3">
-        <a href="#" class="dropdown-item">Link 1</a>
-        <a href="#" class="dropdown-item">Link 2</a>
-        <a href="#" class="dropdown-item">Link 3</a>
-    </div>
-    <button class="dropdown-btn list-group-item list-group-item-action bg-light dropdown-toggle" id="4submenu">Module 4</button>
-    <div class="dropdown-container4">
-        <a href="#" class="dropdown-item">Link 1</a>
-        <a href="#" class="dropdown-item">Link 2</a>
-        <a href="#" class="dropdown-item">Link 3</a>
-</nav>
+    <br>
+    <hr class="mt-5">
+
+    <!-- Footer -->
+    <footer class="my-5 pt-4 text-muted text-center text-small">
+      <p class="mb-1">©2020 Virtual Helper</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
 <!-- Bootstrap Jquery -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<!-- jquery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="assets/script.js"></script>
 </body>
 </html>

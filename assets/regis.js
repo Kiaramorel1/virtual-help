@@ -1,6 +1,6 @@
 var config = {
     apiKey: "AIzaSyAW6hMIb20NrEQQYFFhvZIuPWQVDEbG0jU",
-    uthDomain: "virtual-help-b832e.firebaseapp.com",
+    authDomain: "virtual-help-b832e.firebaseapp.com",
     databaseURL: "https://virtual-help-b832e.firebaseio.com",
     projectId: "virtual-help-b832e",
     storageBucket: "virtual-help-b832e.appspot.com",
@@ -18,6 +18,7 @@ var auth = firebase.auth();
 var signOut = $('#logout')
 var teachSignIn = $('#google-sign-in-teacher')
 var studSignIn = $('#google-sign-in-student')
+
 
 // Teacher Sign In Function
 function teacherSignIn() {
@@ -53,6 +54,13 @@ function studentSignIn() {
         console.log(email)
         var photo = user.photoURL
         console.log("You are now logged in")
+        localStorage.name = displayName
+        localStorage.email = email
+        localStorage.photo = photo
+
+
+        window.location.href = "./profilepages/profilepage.html"
+        // populateProfile(email, displayName, photo )
     }).catch(function(err) {
         console.log(err)
         console.log("sorry try again")
@@ -61,10 +69,17 @@ function studentSignIn() {
 
 // On click sign out
 signOut.on('click', function(e) {
+    console.log("You now logged out")
     e.preventDefault();
     auth.signout();
 })
-
+// Login on click
+teachSignIn.on('click', function() {
+    teacherSignIn();
+})
+studSignIn.on('click', function() {
+    studentSignIn();
+})
 // Auth State Changed
 auth.onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser) {
@@ -76,11 +91,9 @@ auth.onAuthStateChanged(function(firebaseUser) {
     }
 })
 
-// Login on click
-teachSignIn.on('click', function() {
-    teacherSignIn();
-})
-studSignIn.on('click', function() {
-    studentSignIn();
-})
+
+
+
+
+
 
