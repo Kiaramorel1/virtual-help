@@ -1,24 +1,7 @@
-/* element.style {
-}
-.card-lg, . {
-    padding: 4rem;
-}
-.card {
-    background: #fff;
-    margin-bottom: 2rem;
-}
-.m-b-xs, . h1 
-{ 
-    margin-bottom: 10rem;
-} 
-.m-b-xs, . h5 
-{ 
-    margin-bottom: 5rem;
-} */
 .aboutDiv {
     margin-top: 300px;
 }
-h5, h3 {
+.aboutTitle {
     display: block;
     font-weight: bold; 
     text-align: center; 
@@ -26,7 +9,7 @@ h5, h3 {
     font-size: 50px;
 } 
  
-p {
+.aboutText {
     display: block; 
     width: 100%;
     text-align: center;
@@ -34,43 +17,21 @@ p {
 }
 .page-footer {
     background-color: rgb(11,40,112);
+    position: stactic;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 80px;
 }
 .color-text {
     color: white;
 }
-.faqDiv {
-    margin-top: 300px;
-} 
-h2 
-{
-    font-family: Arial, Verdana;
-    font-weight: 800;
-    font-size: 2.5rem;
-    color: #091f2f;
-    text-transform: uppercase;
+.bs-example, .faqTitle{
+    margin: 20px;
 }
-.accordion-section .panel-default > .panel-heading {
-    border: 0;
-    background: #f4f4f4;
-    padding: 0;
+.bs-example{
+    margin-bottom: 15px;
 }
-.accordion-section .panel-default .panel-title a {
-    display: block;
+.accordion .fa{
+    margin-right: 0.5rem;
 }
-.container .centered 
-{
-    position: fixed;
-    top: 50px;
-    left: 50px;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-  }
-{
- 
-/* 
-.card, .card-simple, .modal, .{
-    padding: 3rem;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-}  */
