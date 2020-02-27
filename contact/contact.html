@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/5aa9b89b4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../About/assets/style.css"></link>
+    <link rel="stylesheet" href="../student-course-page/assets/style.css"></link>
+</head>
+<body>
+  <!-- Static navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light nav-inverse" role="navigation">
+        <!-- Logo -->
+        <span class="navbar-brand text-white" href="#"><img src="../student-course-page/assets/LogoMakr_5mOclx.png" alt="logo of a bird" id="logosizing"></img> Virtual Help</span>
+        <!-- Toggle Navigation -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-inverse"></span>
+            <span class="sr-only">Toggle navigation</span>
+        </button>
+        <!-- navbar content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto left-nav">
+                 <li class="nav-item active">
+                     <a class="nav-link text-white" href="../index.html">Home <span class="sr-only">Home Page</span></a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link text-white" href="../About/About-Us.html">About<span class="sr-only">About Page</span></a>
+                 </li>
+             </ul>
+             <!-- right side of nav bar -->
+             <ul class="navbar-nav ml-auto left-nav drop-nav text-white">
+                  <!-- Courses dropdown -->
+                 <li class="nav-item dropleft">
+                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <a class="dropdown-item" href="../student-course-page/index.html">Web Development 101</a>
+                       <a class="dropdown-item" href="#">Game Development Crash Course</a>
+                       <a class="dropdown-item" href="#">Blockchain Fundementals</a>
+                     </div>
+                 </li>
+                 <!-- profile dropdown -->
+                 <li class="nav-item dropleft">
+                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle" alt="logo of profile pic"></i></a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="../student-course-page/allcourses.html">My Courses</a>
+                         <a class="dropdown-item" href="../profilepages/profilepage.html">Profile</a>
+                         <a class="dropdown-item" href="#">Settings</a>
+                         <a class="dropdown-item" href="#">Account</a>
+                         <a class="dropdown-item" href="#">Log Out</a>
+                     </div>
+                 </li>
+            </ul>
+        </div>
+        <!-- end navbar content -->
+    </nav>
+    <!-- end static navbar -->
+</header>
+<div class="container">
+<!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h1 class="h1-responsive font-weight-bold text-center my-4">Contact us</h1>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="validateForm();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Orlando, CA 32822, USA</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@virtualhelp.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+</div>
+<!-- Footer -->
+<footer class="page-footer footer font-small indigo mb-0">
+    <!-- Footer Links -->
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="../About/About-Us.html">About us</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="../FAQ/FAQ.html">FAQ</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="contact.html">Contact</a>
+          </h6>
+        </div>
+          <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+      <hr class="rgba-white-light">
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center">
+        <!-- Grid column -->
+        <div class="mr-2 mb-3">
+          <p><a class="text-white" href="../privacy/policy.html">Privacy Policy</a></p>
+        </div>
+        <div class="mr-2 mb-3">
+          <p><a class="text-white" href="../Terms/terms.html">Terms and Conditions</a></p>
+        </div>
+      </div>
+      <!-- Footer Links -->
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3 color-text">© 2020 Copyright: Rights Reserved</div>
+      <!-- Copyright -->
+  </footer>
+  <!-- /Footer -->
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../student-course-page/assets/course.js"></script>
+  <script src="contact.js"></script>
+  </body>
+  </html>
